@@ -24,7 +24,7 @@ switch(script) {
     break;
 
   case 'build':
-    findRemove(path.join(process.cwd(), 'src'), { extensions: '.css' });
+    // findRemove(path.join(process.cwd(), 'src'), { extensions: '.css' });
 
     spawn.sync('node-sass', ['src', '--output', 'src'], {
       stdio: 'inherit'
